@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  user: ansible
+  remote_user: ansible
   sudo: yes
   tasks:
     include: development/nodejs.yaml
