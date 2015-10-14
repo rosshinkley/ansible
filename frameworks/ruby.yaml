@@ -1,0 +1,10 @@
+---    
+- name: apt update
+  apt: update_cache=yes
+- name: installing ye olde ruby
+  apt: pkg=ruby-full state=installed
+
+
+
+
+

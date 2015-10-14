@@ -1,0 +1,10 @@
+---    
+- name: apt update
+  apt: update_cache=yes
+- name: installing vim
+  apt: pkg=vim state=installed
+
+
+
+
+
