@@ -1,4 +1,4 @@
-#steps
+#steps on a new sandbox
 1. set the network to bridged
 1. install ssh server: `sudo apt-get install openssh-server`
 1. restart ssh: `sudo service ssh restart`
