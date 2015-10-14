@@ -1,26 +1,24 @@
----
-- hosts: all
-  remote_user: root
-  sudo: yes
-  tasks:
-    - name: apt update
-      apt: update_cache=yes
-    - name: install curl
-      apt: pkg=curl state=installed
-    - name: get and run updateogram
-      shell: curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
-    - name: install nodejs
-      apt: pkg=nodejs state=installed
-    - name: install build essentials
-      apt: pkg=build-essential state=installed
-    - name: change npm prefix
-      lineinfile: dest=~/.npmrc state=present line="prefix=~/.node_modules"
-    - name: install updated npm
-      shell: npm install -g npm
-    - name: move npm symlink aside
-      shell: mv /usr/bin/npm /usr/bin/npm-original
-    - name: update npm link
-      file: src=~/.node_modules/bin/npm dest=/usr/bin/npm state=link
+---    
+- name: apt update
+  apt: update_cache=yes
+- name: install curl
+  apt: pkg=curl state=installed
+- name: get and run updateogram
+  shell: curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
+- name: install nodejs
+  apt: pkg=nodejs state=installed
+- name: install build essentials
+  apt: pkg=build-essential state=installed
+- name: ensure npmrc exists
+  file: path=~/.npmrc state=touch
+- name: change npm prefix
+  lineinfile: dest=~/.npmrc state=present line="prefix=~/.node_modules"
+- name: install updated npm
+  shell: npm install -g npm
+- name: move npm symlink aside
+  shell: mv /usr/bin/npm /usr/bin/npm-original
+- name: update npm link
+  file: src=~/.node_modules/bin/npm dest=/usr/bin/npm state=link
 
 
 
