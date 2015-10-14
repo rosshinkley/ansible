@@ -9,3 +9,4 @@
     ```
 1. go to `/etc/ssh/sshd_config`, comment out `PermitRootLogin without-password` and add `PermitRootLogin yes`
 1. restart ssh: `sudo service ssh restart`
+1. copy the ssh id key using `ssh-id.sh`
