@@ -1,0 +1,11 @@
+---    
+- name: apt update
+  apt: update_cache=yes
+- name: installing python dev
+  apt: pkg=python-dev state=installed
+- name: installing command not found
+  apt: pkg=command-not-found
+- name: installing pip
+  apt: pkg=python-pip state=installed
+- name: install thefuck
+  pip: name=thefuck state=latest
