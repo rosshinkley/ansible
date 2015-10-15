@@ -9,6 +9,6 @@
 - name: get vim setup script
   get_url: url=https://raw.githubusercontent.com/rosshinkley/dotfiles/master/update.sh dest=~/.vim/update.sh force=yes
 - name: make setup script +x
-  file: path=~/vim-setup.sh state=touch mode=0755
+  file: path=~/.vim/update.sh state=touch mode=0755
 - name: run vim setup
-  shell: ~/vim-setup.sh
+  shell: ~/.vim/update.sh all
