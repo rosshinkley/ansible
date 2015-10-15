@@ -1,0 +1,7 @@
+---
+- hosts: dev-boxes
+  remote_user: root
+  sudo: yes
+  roles:
+    - common
+    - dev
