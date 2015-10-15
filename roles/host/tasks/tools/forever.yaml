@@ -1,0 +1,8 @@
+---    
+- name: install forever as a global
+  npm: name=forever global=yes
+
+
+
+
+
