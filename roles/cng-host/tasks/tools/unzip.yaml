@@ -1,0 +1,8 @@
+---    
+- name: install forever as a global
+  apt: name=unzip state=installed
+
+
+
+
+
