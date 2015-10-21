@@ -1,0 +1,3 @@
+#swapfile for ubuntu servers
+- src: kamaln7.swapfile
+  path: ./ansible_modules
