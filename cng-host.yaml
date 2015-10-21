@@ -3,5 +3,4 @@
   remote_user: root
   sudo: yes
   roles:
-    - common
     - cng-host

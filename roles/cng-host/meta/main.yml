@@ -1,0 +1,4 @@
+---
+dependencies:
+  - {role: common}
+  - {role: kamaln7.swapfile, swapfile_size:4gb, swapfile_location: /mnt/swapfile}
