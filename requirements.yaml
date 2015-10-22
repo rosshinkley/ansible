@@ -1,3 +1,4 @@
 #swapfile for ubuntu servers
-- src: kamaln7.swapfile
+- src: https://github.com/rosshinkley/ansible-swapfile
   path: ./ansible_modules
+  name: ross.swapfile

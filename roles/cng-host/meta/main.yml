@@ -1,4 +1,4 @@
 ---
 dependencies:
   - {role: common}
-  - {role: kamaln7.swapfile, swapfile_size: 256GB, swapfile_location: /swapfile}
+  - {role: ross.swapfile, swapfile_size: 512MB, swapfile_location: /swapfile}
