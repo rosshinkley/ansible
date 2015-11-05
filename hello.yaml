@@ -1,7 +1,9 @@
 ---
 - hosts: all 
-  remote_user: root
+  remote_user: ross
   sudo: yes
   tasks:
     - name: say hello
       shell: echo hello
+    - name: show pwd
+      shell: pwd
