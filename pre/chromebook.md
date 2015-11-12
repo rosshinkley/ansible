@@ -10,7 +10,7 @@ The rest process is similar to setting up a sandbox, with a couple of difference
 1. add the following to /etc/rc.local:
 	1. `/sbin/iptables -P INPUT ACCEPT`
 	1. `mkdir -p -m0755 /var/run/sshd`
-	1. `/usr/bin/sshd`
+	1. `/usr/sbin/sshd`
 
 1. now, to get ssh running, this assumes that an ssh key has already been created on the chromebook.  If not, start by doing that.
 1. add the id_rsa.pub to the authorized keys: `cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys`
