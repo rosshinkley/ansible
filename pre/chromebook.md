@@ -1,4 +1,10 @@
-the process is similar to setting up a sandbox, with a couple of differences.  This document assumes that you have openssh server installed.
+To start a new chroot, give the following a whirl:
+
+```bash
+sudo sh ~/Downloads/crouton -t xfce,cli-extra,xiwi -r trusty
+```
+
+The rest process is similar to setting up a sandbox, with a couple of differences.  This document assumes that you have openssh server installed.
 
 1. add iptables: `sudo apt-get install iptables`
 1. add the following to /etc/rc.local:
@@ -12,4 +18,4 @@ the process is similar to setting up a sandbox, with a couple of differences.  T
 1. follow the directions in the sandbox file for unlocking root
 1. copy the ssh keys from the regular user the chroot was created under to the root home directory
 
-that should do it.  you should now be able to run ansible scripts against your chroot with ansible.
+that should do it.  you should now be able to run ansible scripts against your chroot with ansible (as the root user).
