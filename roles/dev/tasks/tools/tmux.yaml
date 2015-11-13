@@ -1,0 +1,14 @@
+--- 
+- name: add repository
+  apt_respository: repo='ppa:pi-rho/dev' state=present
+- name: apt update
+  apt: update_cache=yes
+- name: installing tmux
+  apt: pkg=tmux state=installed
+- name: get tmux configuration
+  get_url: url=https://raw.githubusercontent.com/rosshinkley/dotfiles/master/.tmux.conf dest=~/.tmux.conf force=yes
+- name: make .tmux
+  file: path=~/.tmux state=directory
+- name: get tmux dev conf, put in tmux conf directory
+  get_url: url=https://raw.githubusercontent.com/rosshinkley/dotfiles/master/.tmux/dev.conf dest=~/.tmux/dev.conf force=yes
+

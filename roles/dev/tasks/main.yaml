@@ -2,6 +2,7 @@
 - include: tools/nmap.yaml
 - include: tools/thefuck.yaml
 - include: tools/gitbash.yaml
+- include: tools/tmux.yaml
 - name: get bashrc
   get_url: url=https://raw.githubusercontent.com/rosshinkley/dotfiles/master/.bashrc dest=~/.bashrc force=yes
 - name: get vimrc
