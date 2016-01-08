@@ -1,7 +1,7 @@
 #[cng-hosts]
-#104.131.0.218
 
 [dev-boxes]
-#104.131.0.218
-localhost
+#localhost
+192.168.1.177
+
 
