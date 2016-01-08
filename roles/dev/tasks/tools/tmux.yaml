@@ -1,6 +1,6 @@
 --- 
-#- name: add repository
-#  apt_respository: repo='ppa:pi-rho/dev' state=present
+- name: add repository
+  apt_repository: repo='ppa:pi-rho/dev' state=present
 - name: apt update
   apt: update_cache=yes
 - name: installing tmux
