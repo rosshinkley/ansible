@@ -1,5 +1,6 @@
 ---  
 - include: frameworks/nodejs.yaml
 - include: frameworks/ruby.yaml
+- include: frameworks/pip.yaml
 - include: tools/vim.yaml
 - include: tools/git.yaml

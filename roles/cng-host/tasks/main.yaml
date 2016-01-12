@@ -2,3 +2,4 @@
 - include: tools/unzip.yaml
 - include: tools/forever.yaml
 - include: libs/fontcustom.yaml
+- include: libs/mkdocs.yaml
