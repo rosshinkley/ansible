@@ -3,6 +3,7 @@
 1. install ssh server: `sudo apt-get install openssh-server`
 1. restart ssh: `sudo service ssh restart`
 1. unlock root: 
+
     ```bash
     sudo passwd root
     sudo passwd -u root
