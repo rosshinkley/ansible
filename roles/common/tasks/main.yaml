@@ -4,3 +4,4 @@
 - include: frameworks/pip.yaml
 - include: tools/vim.yaml
 - include: tools/git.yaml
+- include: tools/nginx.yaml
