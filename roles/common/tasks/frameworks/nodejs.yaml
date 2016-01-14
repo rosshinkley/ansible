@@ -19,6 +19,8 @@
   shell: mv /usr/bin/npm /usr/bin/npm-original
 - name: update npm link
   file: src=~/.node_modules/bin/npm dest=/usr/bin/npm state=link
+- name: install bower
+  shell: npm install -g bower
 
 
 
